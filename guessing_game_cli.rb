@@ -2,7 +2,7 @@ require 'pry'
 def run_guessing_game
   num = rand(5)+1
   puts "Guess a number!"
-  input = gets.chomp
+  input = gets.chomp.to_int
   binding.pry
   if input == num
     puts "You guessed the correct number!"
